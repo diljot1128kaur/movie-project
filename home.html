@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Dataset</title>
+    <link rel="stylesheet" href="in.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h3 class="logo"><a href="in.html"  style="color:#507c83">MOVIE</a></h3>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="index.html">Home</a></li>
+                    <li class="menu-list-item"><a href="movies.html">Movies</a></li>
+                    <li class="menu-list-item"><a href="series.html">Series</a></li>
+                    <li class="menu-list-item"><a href="popular.html">Popular</a></li>
+                    <li class="menu-list-item"><a href="trends.html">Trends</a></li>
+                </ul>  
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+    </div>
+        <!-- end of logo -->
+        <!-- search container -->
+        <div class = "search-container">
+            <div class = "search-element">
+                <h3>Search Movie:</h3>
+                <input type = "text" class = "form-control" placeholder="Search Movie Title..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+
+                <div class = "search-list" id = "search-list">
+                    <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "galaxy.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3>Guardians of the Galaxy Vol. 2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of search container -->
+
+        <!-- result container -->
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                     
+                     <div class = "movie-poster">
+                        <img src = "galaxy.jpg" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Year: 2017</li>
+                            <li class = "rated">Ratings: PG-13</li>
+                            <li class = "released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                        <p class = "language"><b>Language:</b> English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- end of result container -->
+    </div>
+    <div class="container-4">
+        <div class="movie-list-container-4"  
+        style="background: linear-gradient(to bottom,#233032,#0e1515, #000000)">
+            <div class="movie-list-wrapper-4">
+                <div class="movie-list-4">
+                    <div class="movie-list-item-4">
+                        <img src="g1.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">Enter the World</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-1" style=color:(blue)>Watch</button>
+                    </div>
+                    <div class="movie-list-item-4">
+                        <img src="g2.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">Fantasy Island</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-1">Watch</button>
+                    </div>
+                    <div class="movie-list-item-4">
+                        <img src="g11.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">The Adam Project</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-1">Watch</button>
+                    </div>
+                    <div class="movie-list-item-4">
+                        <img src="g3.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">47</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-1">Watch</button>
+                    </div>
+                    <div class="movie-list-item-4">
+                        <img src="g5.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">Jungle Cruise</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-3">Watch</button>
+                    </div>
+                    <div class="movie-list-item-4">
+                        <img src="g6.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">Journey 2</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-3">Watch</button>
+                    </div>
+                    <div class="movie-list-item-4">
+                        <img src="g7.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">ZOOTOPIA</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-3">Watch</button>
+                    </div>
+                    <div class="movie-list-item-4">
+                        <img src="g8.jpg" alt="" class="movie-list-item-img-1">
+                        <span class="movie-list-item-title-3">BOLT</span>
+                        <p class="movie-list-item-desc-3">link-body-emphasis </p>
+                        <button class="movie-list-item-button-3">Watch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+
+        <h3>MOv<span>IE</span></h3>
+
+        <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
+            
+            <a href="#">Blog</a>
+        
+            <a href="#">Trends</a>
+        
+            <a href="#">About</a>
+            
+            <a href="#">Faq</a>
+            
+            <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">MOVIE © 2024</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>444 S.</span>Chandigarh, INDIA</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>123456789</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">support@MOVIE.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the company</span>
+             Movie Database is a comprehensive platform offering a vast collection of films, coupled with user-friendly features for seamless browsing and exploration of cinematic experiences.
+        </p>
+
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+ <script src="movie.js"></script>
+</body>
+</html>
